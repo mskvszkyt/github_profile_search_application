@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:5px;
+
+    h1{
+        color: var(--text-color-two);
+        font-size: 26px;
+    }
+
+    .theme-toggle{
+        color: var(--text-color-one);
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .theme-toggle img{
+        transition: transform .5s;
+    }
+
+    .theme-toggle:hover img{
+        transform: scale(1.5);
+    }
+
+    .theme-toggle{
+        transition: color .5s;
+    }
+
+    .theme-toggle:hover{
+        color: var(--theme-toggle-hover-color);
+    }
+}
